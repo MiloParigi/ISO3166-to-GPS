@@ -107,7 +107,7 @@ IQ,IRQ,368,Iraq,Republic of Iraq,33,44
 IE,IRL,372,Ireland,Ireland,53,-8
 IL,ISR,376,Israel,State of Israel,31.5,34.75
 IT,ITA,380,Italy,Italian Republic,42.833333,12.833333
-[UNOFFICIAL]XK,XKX,383,Kosovo,Republic of Kosovo,42.583333,21
+[UNOFFICIAL]XK,[UNOFFICIAL]XKX,383,Kosovo,Republic of Kosovo,42.583333,21
 CI,CIV,384,Cote d'Ivoire,Republic of Cote d'Ivoire,8,-5
 JM,JAM,388,Jamaica,Jamaica,18.25,-77.5
 JP,JPN,392,Japan,Japan,36,138
