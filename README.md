@@ -19,7 +19,7 @@ install.packages("data.table")
 library(data.table)
 ```
 
-Then, we use fread to load the dataset in a data.table (much faster than a data.frame for big amount of data). We use - na="" - for the special case of Namibia (see below):
+Then, we use fread to load the dataset in a data.table (much faster than a data.frame for big amount of data). We use *na=""* for the special case of Namibia (see below):
 
 ```
 my_dt <- fread("<filepath>/iso2gps.csv", na="")
@@ -27,7 +27,7 @@ my_dt <- fread("<filepath>/iso2gps.csv", na="")
 
 We now have the data in our R environement. Here is a small plot generate with the [tmap](https://github.com/mtennekes/tmap) package :
 
-* WIP
+![R tmap plot](https://user-images.githubusercontent.com/20594983/31993216-d2a2a0ca-b97c-11e7-84ea-3f986830ef6a.png)
 
 ### Special Cases
 
