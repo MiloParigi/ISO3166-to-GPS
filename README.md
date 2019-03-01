@@ -1,38 +1,23 @@
 # ISO3166-to-GPS
-CSV datatable giving the center point for all ISO registered Country.
+CSV datatable giving the centroids for all ISO registered countries.
 
 ## Dataset Description 
-* The ISOcodes in alphanumeric2/3 and numeric3 ("alpha2" - "alpha3" - "iso_num")
+* ISO codes, in alphanumeric2/3 and numeric3 ("alpha2" - "alpha3" - "iso_num")
 * Country names, short and full ("shortCountry" - "country")
-* The GPS coordinates of the middle points ("lat" - "long")
+* The GPS coordinates of the centroids ("lat" - "long")
 
-## Getting Started
+## Some information
 
-These instructions will get you the database loaded in R environnement
+### Data vis 
 
-### Installing
-
-First, I highly suggest you to use the data.table package. data.table provide you a good and fast csv reader (fread). You should install and load the necessary package:
-
-```
-install.packages("data.table")
-library(data.table)
-```
-
-Then, we use fread to load the dataset in a data.table (much faster than a data.frame for big amount of data). We use *na=""* for the special case of Namibia (see below):
-
-```
-my_dt <- fread("<filepath>/iso2gps.csv", na="")
-```
-
-We now have the data in our R environement. Here is a small plot generate with the [tmap](https://github.com/mtennekes/tmap) package :
+Here is a small plot generated with the [tmap](https://github.com/mtennekes/tmap) package :
 
 ![R tmap plot](https://user-images.githubusercontent.com/20594983/31993216-d2a2a0ca-b97c-11e7-84ea-3f986830ef6a.png)
 
 ### Special Cases
 
 * Kosovo is not listed as an ISO standard country. The unofficial 2 and 3-digit codes are used by the European Commission and others until Kosovo is assigned an ISO code. It's still in this datatable but marked with an [UNOFFICIAL] tag.
-* Be carefull with Namibia, the Isocode of this country being NA you can have a not defined value if you dont read it properly !
+* Be carefull with Namibia, the Isocode of this country being NA you can have a not defined value if you dont read it properly (reading it using data.table fread: ```fread("<filepath>/iso2gps.csv", na="")```)!
 
 ## Contributing
 
